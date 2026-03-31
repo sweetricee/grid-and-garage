@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid & Garage | Motorsport Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://donut.media/cdn/shop/files/RY_FRONT.png?v=1693323019" type="image/png" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#head">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#page_links">Links</a></li>
+            <li><button id="theme-button">Toggle Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <header class="header-container" id="head">
+        <img id="header-img" src="img_logo.webp" alt="Grid and Garage Logo" />
+        <h1>Grid & Garage</h1>
+        <div id="header-buttons">
+            <button class="header-button" type="button">TEAM STANDINGS</button>
+            <button class="header-button" type="button">RACES</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>This platform is designed for automotive enthusiasts to stay updated on local car meets and international Formula 1 events. Users can explore upcoming event dates, race schedules, and current standings. It serves as a central hub connecting local car culture with the global motorsport scene.</p>
+        <h3>Know the Grid. Find the Meet. Live the Drive.</h3>
+        <ul>
+            <li><strong>Formula 1:</strong> The pinnacle of open-wheel motorsport.</li>
+            <li><strong>Car Scene:</strong> The collective community and culture of automotive enthusiasm.</li>
+            <li><strong>Cars & Coffee:</strong> Informal gatherings for enthusiasts to display vehicles and socialize.</li>
+        </ul>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2> 
+        <div class="freespace-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1kVluAjJ66VR37LBabhUi-ruwzeXZ__zkew&s" width="40%" alt="Ferrari F1 Car SF25"/>
+            <p>Scuderia Ferrari SF25</p>
+            <img src="https://i.ytimg.com/vi/5tNTuKolths/hq720.jpg" width="50%" alt="Honda S2000"/>
+            <p>Local Honda S2000 Showcase</p>
+        </div>
+    </section>
+
+    <section id="rsvp">
+        <h2>RSVP to the Grid</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                We're excited to have you! To ensure an accurate headcount and prepare for the grid, please fill out our RSVP form. Your response helps us make this event the best it can be.
+            </div>
+            <div class="rsvp-participants">
+                <p>🎟️ Vincent from Illinois has joined the grid!</p>
+                <p>🎟️ Crystal from Georgia has joined the grid!</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form id="rsvp-form">
+                <label>Name: <input type="text" id="name-input" required></label>
+                <label>State: <input type="text" id="state-input" required></label>
+                <label>Email: <input type="email" id="email-input" required></label> 
+            </form>
+            <button type="button" id="rsvp-button">Submit RSVP</button>
+        </div>
+    </section>
+                
+    <div id="success-modal" class="modal">
+        <div class="modal-container">
+            <p id="modal-text">Successfully registered!</p>
+            <img id="animated-image" src="max-verstappen.jpg" alt="Driver Profile"/>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
